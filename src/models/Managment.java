@@ -16,9 +16,9 @@ public interface Managment<Student> {
                          Consumer<Student> con);
     public  void displayStudentsByFilter(List<Student> students, Predicate<Student> pre, Consumer<Student> con);
     public     String returnStudentsNames(List<Student> students, Function<Student, String> fun);
-    //public  Student createStudent(Supplier<Student> sup);
-    //public     List<Student> sortStudentsById(List<Student> students, Comparator<Student> com);
-    //public Stream<Student> convertToStream(List<Student> students);
+    public  Student createStudent(Supplier<Student> sup);
+    public     List<Student> sortStudentsById(List<Student> students, Comparator<Student> com);
+    public Stream<Student> convertToStream(List<Student> students);
 
 
 }
